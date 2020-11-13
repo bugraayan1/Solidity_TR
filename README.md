@@ -2970,8 +2970,8 @@ Hata yönetimi ve ne zaman hangi fonksiyonun kullanılacağı hakkında daha faz
 ## Adres Türleri Öğeleri
 
 + `<adres> .balance (uint256)`: Wei biriminde adres bakiyesi
-+ `<address payable>.transfer(uint256 amount)`: Verilen miktarda Wei'yi Adres'e gönderif, başarısızlık durumunda mebla geri döner, ileriye dönük 2300 gaz borusu gönderir.
-+ `<address payable>.send(uint256 amount) returns (bool)`: Verilen miktarda Wei'yi Adrese gönderin, başarısızlık durumunda false verir, ileriye dönük 2300 gaz borusu gönderir.
++ `<address payable>.transfer(uint256 amount)`: Verilen miktarda Wei'yi Adres'e gönderir, başarısızlık durumunda mebla geri döner, ileriye dönük 2300 gaz borusu gönderir.
++ `<address payable>.send(uint256 amount) returns (bool)`: Verilen miktarda Wei'yi Adrese gönderir, başarısızlık durumunda false verir, ileriye dönük 2300 gaz borusu gönderir.
 + `<address>.call(bytes memory) returns (bool, bytes memory)`: Verilen yük ile düşük seviye `CALL` düzenler, başarı durumunu ve iade verilerini geri gönderir.
 + `<address>.delegatecall(bytes memory) returns (bool, bytes memory)`: Verilen yük ile düşük seviye `DELEGATECALL` düzenler, başarı durumu ve iade verilerini iletir.
 + `<address>.staticcall(bytes memory) returns (bool, bytes memory)`: Verilen yük ile düşük seviyeli `STATICCALL` düzenler, başarı durumu ve iade verilerini iletir, mevcut tüm gazları yönlendirir.
